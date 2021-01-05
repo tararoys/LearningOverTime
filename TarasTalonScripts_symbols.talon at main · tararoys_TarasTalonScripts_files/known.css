@@ -1,0 +1,21 @@
+/*Things without any of the following classes are background scenery.  You can assume I have no idea what they are. */
+
+/*Things I have seen and do not understand*/
+
+
+.dunno {
+    background: red;
+}
+
+/*Things I have seen and am working with*/
+
+
+.kindaknow {
+    background: yellow;
+}
+
+/*Things that I know bout and have written what I know about them in a Git Commit.*/ 
+
+.know {
+    background: green;
+}
