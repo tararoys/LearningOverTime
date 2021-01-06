@@ -30,3 +30,5 @@ the general english
 This means when you say "plus", Talon will type the plus sign + 
 
 explains what they program is supposed to do. 
+
+[back to basic](Talonscript-Symbols-Cookbook.md#declaring-the-most-basic-kind-of-voice-command)

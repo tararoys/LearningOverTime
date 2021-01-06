@@ -9,6 +9,5 @@ plus: "+"
 
 This means when you say "plus", Talon will type the plus sign + 
 
-
-
+[read more](talonscript-symbols-cookbook-long-version.md#declaring-the-most-basic-kind-of-voice-command)
 
