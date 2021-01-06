@@ -88,4 +88,5 @@ I found a [document about rules  in the slack,  thanks to 2shea](https://talonvo
 >
 >
 
-[back to basic](Talonscript-Symbols-Cookbook.md#declaring-alterantive-commands-wih-or)
+[back to basic](Talonscript-Symbols-Cookbook.md#declaring-alternative-commands-with-or)
+
