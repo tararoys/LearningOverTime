@@ -11,3 +11,4 @@ This means when you say "plus", Talon will type the plus sign +
 
 
 
+
