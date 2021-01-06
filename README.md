@@ -12,3 +12,13 @@ https://stackoverflow.com/questions/8446218/how-to-see-an-html-page-on-github-as
 Here is an example:
 
 https://htmlpreview.github.io/?https://github.com/tararoys/LearningOverTime/blob/main/TarasTalonScripts_symbols.talon%20at%20main%20%C2%B7%20tararoys_TarasTalonScripts.html
+
+It appears to take about five minutes for the external assets to appear.  
+
+You can also use a service called https://raw.githack.com/, which produces a url like
+ https://raw.githack.com/tararoys/LearningOverTime/main/TarasTalonScripts_symbols.talon at main · tararoys_TarasTalonScripts.html
+
+This is how to do it with a private repository, but the following method creates a token at the end of the url which appears to only work once and for a short period of time.  It also does not include the css, which completely defeats the purpose.  
+
+https://github.com/htmlpreview/htmlpreview.github.com/issues/80
+
