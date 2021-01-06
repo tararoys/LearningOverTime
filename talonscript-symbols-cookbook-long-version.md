@@ -1,6 +1,6 @@
-#Talonscript Symbols Coobook Long Version
+# Talonscript Symbols Coobook Long Version
 
-###Declaring the most basic kind of voice command.
+### Declaring the most basic kind of voice command.
 
 ```
 plus: "+"
