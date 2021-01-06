@@ -48,4 +48,7 @@ To quote @aegis
 >I can't even trivially block the command, because you can changecaptures per context, so a capture could be optional only some of the time -_-
 
 
+Note: the previous 100 lines of that conversation are very interesting, too, since it contains a lengthly explanation of how the talon command parser works. 
+
 [back to basic](Talonscript-Symbols-Cookbook.md#declaring-optional-commands)
+
