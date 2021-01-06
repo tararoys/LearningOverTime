@@ -52,3 +52,40 @@ Note: the previous 100 lines of that conversation are very interesting, too, sin
 
 [back to basic](Talonscript-Symbols-Cookbook.md#declaring-optional-commands)
 
+### Declaring Alternative Commands with Or
+
+```
+( downscore  | underscore ): "_"
+```
+
+If you want to hoave two different commands do the same thing, you can use Or syntax.  
+
+```( downscore  | underscore )```
+
+means you can say "downscore" OR you can say "underscore", either one, and have it print out "_".
+
+
+This is another part where I am not sure if this is fully implemented, yet.  It works, however in the slack all searches of (a | b) 
+
+https://talonvoice.slack.com/archives/C7ENXA7C4/p1520030327000373
+
+> the (a | b) syntax is fine
+
+I found a [document about rules  in the slack,  thanks to 2shea](https://talonvoice.slack.com/archives/C7ENXA7C4/p1536365569000100)
+
+[from the unnofical talon voice docs:] (https://github.com/dwighthouse/unofficial-talonvoice-docs/blob/master/docs/Rules.md#alternatives)
+
+>Alternative words and phrases can be recognized as the same Rule by separting the options with a pipe ("|"). For now, Alternatives have to be contained within a Grouping set of parentheses (see below).
+>
+>This is mostly used when there is more than one common way to describe an Action, or to provide a shorthand verbal syntax while retaining the more verbose and understandable original.
+>
+>This can also be useful for very similar sounding words if that word is harder to recognize.
+>
+>```
+>    (enter | return) - Recognizes either "enter" or "return"
+>    (dubquote | double quote) - Recognizes either "dubquote" or "double quote"
+>    (tilde | till duh | till day) - Recognizes "tilde", in spite of alternative pronounciations
+>
+>
+
+[back to basic](Talonscript-Symbols-Cookbook.md#declaring-alterantive-commands-wih-or)
