@@ -17,7 +17,7 @@ In this case, the plus to the left of the colon is the key.   The "+" to the  ri
 
 [back to basic](Talonscript-Symbols-Cookbook.md#declaring-the-most-basic-kind-of-voice-command)
 
-### Declaring a Command with Optional Words
+### Declaring Optional Commands
 
 ```
 question [mark]: "?"
@@ -26,10 +26,11 @@ question [mark]: "?"
 If you put a word in square brackets, that means the word is optional.  So if you say "question" or "question mark" talon will type out a question mark.  
 
 
+There appears to be an ongoing debate about whether [optional rules should even be allowed in talon.](https://talonvoice.slack.com/archives/C9MHQ4AGP/p1608013506415600)  
+
 To quote @aegis
 
->There appears to be an ongoing debate about whether [optional rules should even be allowed in talon.](https://talonvoice.slack.com/archives/C9MHQ4AGP/p1608013506415600)  
->
+
 >which makes me think of yet another reason to not allow them, if you define a capture such as
 >
 >```
@@ -45,3 +46,6 @@ To quote @aegis
 >
 >this means you have a fully optional command, so it's totally legal for that command to trigger basically all the time on its own, and it's not even obvious at the command site that this would happen (edited) 
 >I can't even trivially block the command, because you can changecaptures per context, so a capture could be optional only some of the time -_-
+
+
+[back to basic](Talonscript-Symbols-Cookbook.md#declaring-optional-commands)
