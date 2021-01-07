@@ -90,3 +90,34 @@ I found a [document about rules  in the slack,  thanks to 2shea](https://talonvo
 
 [back to basic](Talonscript-Symbols-Cookbook.md#declaring-alternative-commands-with-or)
 
+### Multi-line Command
+
+
+Talon lets you make multi-line commands.  This make what you are attempting to do easier to read.  The commands happen one after the other.  
+
+You can't mix the syntax of a single line command with a multi-line command.  
+
+> empty dubstring:  
+>    '""'
+>    key(left)
+
+
+Each line below the command is a thing that happens one right after the other. What happens in this one is Talon writes out two quotation marks, then presses the left arrow key to put the cursor in between the two quotation marks you just placed. 
+
+For example, this gives an error, as described in this [slack message](https://talonvoice.slack.com/archives/G9YTMSZ2T/p1593673661414300): 
+
+>```
+>Trader name: key(tab)
+>	insert("trader aa")
+>	key(tab)
+>	insert("password")
+>	key(tab enter)
+>```
+>
+>aegis:talon:  2:07 AM
+>ah, you're missing the newline after the :
+>2:07
+>you either get single-line commands or multi-line commands, you can't mix the syntax in a single command (edited) 
+>
+
+[back to basic](Talonscript-Symbols-Cookbook.md#multi-line-command)
