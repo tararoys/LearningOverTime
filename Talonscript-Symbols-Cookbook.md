@@ -65,3 +65,12 @@ Text is a variable.  A variable is like a box you can put things in to use later
 In this case, it takes text that has been selected and stores it in our text variable.  In the next line, in order to paste over the select text, you use the user.paste command.  The {} is interesting, because that is a signal to talonscript to go look for a variable called 'text' inside the parentheses and insert it's value into the string. 
 
 [read more](talonscript-symbols-cookbook-long-version.md#variables)
+
+### Comments 
+
+
+```
+#ellipses: "…"
+```
+
+If you have a piece of talonscript that isn't really working, you can comment it out by putting a hash in front of it.  

@@ -182,3 +182,33 @@ Talon strings look like [python f-strings](https://matthew-brett.github.io/teach
 
 
 [back to basic](Talonscript-Symbols-Cookbook.md#variables)
+### Comments 
+
+```
+#ellipses: "…"
+```
+
+If you have a piece of talonscript that isn't really working, you can comment it out by putting a hash in front of it.  
+
+After testing, it appears that commands of the form 
+
+```
+try out : "hello world" #try to print hello world 
+```
+
+do not work, so you cannot comment on your talonscript on the same line as a script. 
+
+This also does not work:  
+
+```
+try out command: 
+	"test" #commemt
+```
+
+it gives an "
+
+```
+Line: 1, Column: 8 - unexpected token
+      "test" #test
+             ^"
+```
