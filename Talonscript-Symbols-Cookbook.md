@@ -40,7 +40,7 @@ means you can say "downscore" OR you can say "underscore", either one, and have 
 
 If you are doing something more complex in Talon, you can use multi-line commands.  
 
->``` 
+``` 
 empty dubstring:  
     '""'
     key(left)
