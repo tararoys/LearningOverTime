@@ -128,4 +128,57 @@ For example, this gives an error, as described in this [slack message](https://t
 
 [back to basic](Talonscript-Symbols-Cookbook.md#multi-line-command)
 
+### Variables
 
+You can use variables to hold values in talonscript.  
+
+```
+angle this: 
+    text   =  edit.selected_text()
+    user.paste("<{text}>")
+```
+
+Text is a variable.  A variable is like a box you can put things in to use later.  
+
+In this case, it takes text that has been selected and stores it in our text variable.  In the next line, in order to paste over the select text, you use the user.paste command.  The {} is interesting, because that is a signal to talonscript to go look for a variable called 'text' inside the parentheses and insert it's value into the string. 
+
+
+
+Here's someone [discovering variables for the first time](https://talonvoice.slack.com/archives/G9YTMSZ2T/p1586803914443300)
+
+>Grue
+>ah now I understand; was confused about the "variable in talon script" part
+>
+>aegis:talon:  1:52 PM
+>what do you mean by that
+>oh
+>
+>right
+>
+>yeah talonscript has variables and expressions
+>
+>Grue  1:52 PM
+>named variables too?
+>
+>aegis:talon:  1:52 PM
+>```
+>test <phrase>:
+>    x = phrase + "a"
+>    y = phrase + "b"
+>    insert(x + y)
+>```
+>
+>Grue  1:52 PM
+>this works ???? nobody told me that o_O
+
+The strings Talon uses appear to be (based off Talon strings)[https://talonvoice.slack.com/archives/G9YTMSZ2T/p1604380817292900].
+
+> Nov 2nd 2020
+> - now format strings are properly type checked and interpreted as TalonScript (now that it's fixed, I feel safe saying the original implementation was to run them as python with eval() -_____- which is why it was super janky, had terrible error messages, and couldn't be type checked haha)
+
+Snce the strings were run in python with eval(), which [allows you to evaluate arbitrary Python expressions](https://realpython.com/python-eval-function/), I feel safe to assume that talon strings and python strings are closely related.  
+
+Talon strings look like [python f-strings](https://matthew-brett.github.io/teaching/string_formatting.html), except without the need to put an f in front of them. 
+
+
+[back to basic](Talonscript-Symbols-Cookbook.md#variables)
