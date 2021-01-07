@@ -50,18 +50,3 @@ Each line below the command is a thing that happens one right after the other. I
 
 [read more](talonscript-symbols-cookbook-long-version.md#multi-line-command)
 
-### Variables
-
-You can use variables to hold values in talonscript.  
-
-```
-angle this: 
-    text   =  edit.selected_text()
-    user.paste("<{text}>")
-```
-
-Text is a variable.  A variable is like a box you can put things in to use later.  
-
-In this case, it takes text that has been selected and stores it in our text variable.  In the next line, in order to paste over the select text, you use the user.paste command.  The {} is interesting, because that is a signal to talonscript to go look for a variable called 'text' inside the parentheses and insert it's value into the string. 
-
-[read more](talonscript-symbols-cookbook-long-version.md#variables)
