@@ -40,10 +40,11 @@ means you can say "downscore" OR you can say "underscore", either one, and have 
 
 If you are doing something more complex in Talon, you can use multi-line commands.  
 
-> empty dubstring:  
->    '""'
->    key(left)
-
+>``` 
+empty dubstring:  
+    '""'
+    key(left)
+```
 
 Each line below the command is a thing that happens one right after the other. In this one Talon writes out two quotation marks, then presses the left arrow key to put the cursor in between the two quotation marks you just placed. 
 
