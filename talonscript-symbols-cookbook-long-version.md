@@ -95,14 +95,20 @@ I found a [document about rules  in the slack,  thanks to 2shea](https://talonvo
 
 Talon lets you make multi-line commands.  This make what you are attempting to do easier to read.  The commands happen one after the other.  
 
-You can't mix the syntax of a single line command with a multi-line command.  
-
+	
 > empty dubstring:  
 >    '""'
 >    key(left)
 
 
 Each line below the command is a thing that happens one right after the other. What happens in this one is Talon writes out two quotation marks, then presses the left arrow key to put the cursor in between the two quotation marks you just placed. 
+
+There is an assertion that talonscript [can do only one operation per line)[https://talonvoice.slack.com/archives/C7ENXA7C4/p1603387567303400]
+
+>rntz:ocean:  12:26 PM
+I think talonscript only allows one operation per line? try using an intermediate variable
+>
+>You can't mix the syntax of a single line command with a multi-line command.  
 
 For example, this gives an error, as described in this [slack message](https://talonvoice.slack.com/archives/G9YTMSZ2T/p1593673661414300): 
 
@@ -121,3 +127,5 @@ For example, this gives an error, as described in this [slack message](https://t
 >
 
 [back to basic](Talonscript-Symbols-Cookbook.md#multi-line-command)
+
+
