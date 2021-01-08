@@ -74,3 +74,14 @@ In this case, it takes text that has been selected and stores it in our text var
 ```
 
 If you have a piece of talonscript that isn't really working, you can comment it out by putting a hash in front of it.  
+
+###
+
+```
+(bracket | brace) this: 
+    text = edit.selected_text()
+    user.paste("{{{text}}}")
+```
+
+If you need to have a curly brace in your string, you can escape the curly brace by putting another curly brace in front of it.  Many characters have special meanings- to 'escape' a character means, "No, don't do the special meaning when you see the character, just write it out."
+

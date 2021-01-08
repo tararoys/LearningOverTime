@@ -212,3 +212,23 @@ Line: 1, Column: 8 - unexpected token
       "test" #test
              ^"
 ```
+
+###How to Write a Curly Braces
+
+```
+(bracket | brace) this: 
+    text = edit.selected_text()
+    user.paste("{{{text}}}")
+```
+
+If you need to have a curly brace in your string, you can escape the curly brace by putting another curly brace in front of it.  Many characters have special meanings- to 'escape' a character means, "No, don't do the special meaning when you see the character, just write it out."
+
+
+
+```
+inside (bracket | braces): 
+	insert("{}") 
+	key(left)
+```
+
+It is interesting that you do not need to escape braces in the above command. I assume this is because a pair of empty braces without anything inside it is interpreted as a string.  
