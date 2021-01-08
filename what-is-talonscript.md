@@ -4,8 +4,9 @@ Talonscript is an extremely limited
 
 Per [this slack message](https://talonvoice.slack.com/archives/C7ERD5Q5T/p1607549480243500) 
 
-```
 talonscript is just
+
+```python
 
 <phrase>:
     call() # call an action
